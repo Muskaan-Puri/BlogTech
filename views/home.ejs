@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+
+<div class="center">
+<h1>HOME</h1>
+<p> <%= homeContent %> </p>
+</div>
+
+<h1 class="center"  style="margin-bottom: 40px;">MY BLOGS</h1>
+
+<div class="content">
+<% for(let post of posts) { %>
+  <h2><%= post.title %></h2>
+  <p><%= post.content.substring(0,1500) + "..." %> <a href="/posts/<%= post._id %>">Read More</a></p>
+<% } %>
+</div>
+
+
+<%- include('partials/footer'); -%>
+

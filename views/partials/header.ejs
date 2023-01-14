@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <p class="navbar-brand">BLOGTECH</p>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- 6 -->
+      <li id="home"><a href="/">HOME</a></li>
+      <li id="about"><a href="/about">ABOUT US</a></li>
+      <li>
+        <div class="dropdown">
+          <button onmouseover="myFunction()" class="dropbtn"> LOGIN</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">User Login</a>
+            <a href="/login">Author Login</a>
+            <a href="#">Admin Login</a>
+          </div>
+        </div>
+      </li>
+      <!-- <li><a href="/login">AUTHOR LOGIN</a></li> -->
+      <!-- <li> <a href="/login"><button class="btn btn-primary>Author Login</button> </a></li> -->
+    </ul>
+  </div>
+</nav>
+
+<script>
+  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<body>
+  <div class="container container-2">

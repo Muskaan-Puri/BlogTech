@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+
+<div class="form-container">
+    <form action="/login" method="post" class="text-center">
+        <h2 class="login-margin">Please LOGIN</h2>
+        <div class="field">
+            <label>Email</label>
+            <input type="email" name="authorId" class="form-control" placeholder="Author-Id..">
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input type="password" name="authorPass" class="form-control" placeholder="Password..">
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary btn-lg" type="submit">Login</button>
+        </div>
+    </form>
+</div>
+    <%- include('partials/footer'); -%>
